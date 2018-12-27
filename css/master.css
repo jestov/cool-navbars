@@ -10,13 +10,17 @@ body, html{
     position: relative;
     height: 100%;
     margin: 0;
+    color: #fff;
+}
+a{
+    color: #fff;
+    text-decoration: none;
 }
 .logo{
     width: 65px;
     height: 65px;
     border: 2px solid;
     border-left: 0;
-    color: #fff;
     padding: 5px;
     vertical-align: middle;
     line-height: 1;
@@ -63,4 +67,24 @@ nav#main-nav ul li a.active{
 }
 .line:nth-of-type(4){
     margin-left: 80%;
+}
+footer{
+    position: fixed;
+    font-size: 11px;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    transform: rotate(-90deg);
+    width: 100vh;
+    text-align: center;
+    left: 0;
+    padding: 85px;
+    color: #aaa;
+}
+footer a{
+    font-weight: 600;
+    color: #aaa;
+}
+footer a:hover{
+    border-bottom: 1px solid rgba(255,255,255,0.2);
 }
