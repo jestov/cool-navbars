@@ -1,0 +1,66 @@
+body, html{
+    background: #111;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+section{
+    display: none;
+}
+section.active{
+    display: block;
+}
+section div{
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10vh 20%;
+    color: #fff;
+}
+section#jellyfish div:first-child{
+    background: url("../img/jellyfish/1.jpeg");
+    background-size: cover;
+}
+section#jellyfish div:nth-of-type(2){
+    background: url("../img/jellyfish/2.jpeg");
+    background-size: cover;
+}
+section#jellyfish div:nth-of-type(3){
+    background: url("../img/jellyfish/3.jpeg");
+    background-size: cover;
+}
+section#jellyfish div:nth-of-type(4){
+    background: url("../img/jellyfish/4.jpeg");
+    background-size: cover;
+}
+section#jellyfish h2{
+    font-size: 120px;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+    letter-spacing: -1px;
+    font-weight: 800;
+    margin: 0;
+}
+section#jellyfish h3{
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-size: 20px;
+}
+section#jellyfish h4{
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: -5px;
+    margin: 0;
+}
+section#jellyfish p{
+    font-weight: 300;
+    line-height: 2.2;
+    text-align: justify;
+}
