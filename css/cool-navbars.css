@@ -4,6 +4,7 @@ body, html{
 ul{
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 ul li a{
     color: #fff;
@@ -25,19 +26,19 @@ section div.box{
     color: #fff;
 }
 section#jellyfish div.box:first-of-type{
-    background: url("../img/jellyfish/1.jpeg");
+    background: url("../img/jellyfish/1.jpeg") center;
     background-size: cover;
 }
 section#jellyfish div.box:nth-of-type(2){
-    background: url("../img/jellyfish/2.jpeg");
+    background: url("../img/jellyfish/2.jpeg") center;
     background-size: cover;
 }
 section#jellyfish div.box:nth-of-type(3){
-    background: url("../img/jellyfish/3.jpeg");
+    background: url("../img/jellyfish/3.jpeg") center;
     background-size: cover;
 }
 section#jellyfish div.box:nth-of-type(4){
-    background: url("../img/jellyfish/4.jpeg");
+    background: url("../img/jellyfish/4.jpeg") center;
     background-size: cover;
 }
 section#jellyfish h2{
@@ -67,7 +68,7 @@ section#jellyfish p{
 }
 nav.jellyfish{
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     right: 20px;
     text-align: right;
 }

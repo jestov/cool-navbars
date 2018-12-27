@@ -27,6 +27,7 @@ a{
     padding: 20px 5px 0 0;
     font-weight: 600;
     letter-spacing: -1px;
+    z-index: 1;
 }
 nav#main-nav{
     position: fixed;
@@ -36,19 +37,111 @@ nav#main-nav{
     padding: 0 60px;
     display: flex;
     justify-content: space-between;
+    z-index: 12;
+}
+nav#main-nav ul{
+    position: fixed;
+    background: rgba(1,1,1,0.95);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 nav#main-nav ul li{
-    display: inline-block;
+    display: block;
 }
 nav#main-nav ul li a{
-    font-size: 12.5px;
-    font-weight: 600;
+    font-size: 35px;
     margin: 0 10px;
-    padding: 8px 5px;
+    padding: 12px 5px;
     display: inline-block;
+    line-height: 1;
+    font-weight: 600;
+    opacity: 0.5;
+}
+nav#main-nav ul li a:hover{
+    opacity: 0.8;
 }
 nav#main-nav ul li a.active{
     font-weight: 800;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-size: 60px;
+    opacity: 1;
+}
+.github{
+    font-size: 2rem;
+    padding: 0px 10px;
+    margin: 0 5px;
+    display: inline-block;
+    position: fixed;
+    bottom: 30px;
+    left: 60px;
+    z-index: 11;
+}
+details{
+    position: relative;
+}
+details summary{
+    list-style: none;
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+    height: 35px;
+}
+details summary .open{
+    display: none;
+}
+details[open] summary .open{
+    display: block;
+}
+details summary .open .bar:first-of-type{
+    transform: rotate(-45deg);
+    width: 30px;
+    bottom: -10px;
+    position: relative;
+}
+details summary .open .bar:nth-child(2){
+    transform: rotate(45deg);
+    width: 30px;
+    bottom: -2px;
+    position: relative;
+}
+details[open] summary .closed{
+    display: none;
+}
+details summary:hover .closed .bar:first-of-type{
+    width: 35px;
+}
+details summary:hover .closed .bar:nth-of-type(2){
+    width: 30px;
+}
+details summary:hover .closed .bar:nth-of-type(3){
+    width: 20px;
+}
+.bar{
+    height: 1px;
+    background: #fff;
+    display: block;
+    margin: 7px;
+    -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+}
+.bar:first-of-type{
+    width: 30px;
+}
+.bar:nth-of-type(2){
+    width: 25px;
+}
+.bar:nth-of-type(3){
+    width: 15px;
 }
 .line{
     width: 1px;
@@ -71,7 +164,7 @@ nav#main-nav ul li a.active{
 footer{
     position: fixed;
     font-size: 11px;
-    z-index: 1;
+    z-index: 0;
     top: 0;
     bottom: 0;
     transform: rotate(-90deg);
