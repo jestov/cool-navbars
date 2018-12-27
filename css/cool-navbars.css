@@ -15,7 +15,7 @@ section{
 section.active{
     display: block;
 }
-section div{
+section div.box{
     min-height: 100vh;
     display: flex;
     justify-content: flex-end;
@@ -24,19 +24,19 @@ section div{
     padding: 10vh 20%;
     color: #fff;
 }
-section#jellyfish div:first-child{
+section#jellyfish div.box:first-of-type{
     background: url("../img/jellyfish/1.jpeg");
     background-size: cover;
 }
-section#jellyfish div:nth-of-type(2){
+section#jellyfish div.box:nth-of-type(2){
     background: url("../img/jellyfish/2.jpeg");
     background-size: cover;
 }
-section#jellyfish div:nth-of-type(3){
+section#jellyfish div.box:nth-of-type(3){
     background: url("../img/jellyfish/3.jpeg");
     background-size: cover;
 }
-section#jellyfish div:nth-of-type(4){
+section#jellyfish div.box:nth-of-type(4){
     background: url("../img/jellyfish/4.jpeg");
     background-size: cover;
 }
@@ -63,4 +63,48 @@ section#jellyfish p{
     font-weight: 300;
     line-height: 2.2;
     text-align: justify;
+}
+nav.jellyfish{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+}
+nav.jellyfish ul li a{
+    display: inline-block;
+    font-size: 12.5px;
+    padding: 5px 10px;
+    -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+}
+nav.jellyfish ul li a span{
+    display: none;
+    margin-right: 10px;
+    top: 2px;
+    position: relative;
+}
+nav.jellyfish ul li a.active span{
+    display: inline-block;
+    top: 0;
+}
+nav.jellyfish ul li a .indicator{
+    width: 3.5px;
+    height: 3.5px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    position: relative;
+}
+nav.jellyfish ul li a.active .indicator{
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    right: -3px;
+    top: 2px;
+}
+nav.jellyfish ul li a:hover span{
+    display: inline-block;
 }

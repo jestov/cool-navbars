@@ -43,6 +43,9 @@ nav#main-nav ul li a{
     padding: 8px 5px;
     display: inline-block;
 }
+nav#main-nav ul li a.active{
+    font-weight: 800;
+}
 .line{
     width: 1px;
     background: rgba(255,255,255,0.05);
