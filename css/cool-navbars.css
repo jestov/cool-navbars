@@ -140,8 +140,42 @@ nav.skateboarding ul li a:hover span{
 }
 
 /* road-lights */
-
-
+nav.road-lights ul li a{
+    display: inline-block;
+    font-size: 12.5px;
+    padding: 5px 10px;
+    -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+}
+nav.road-lights ul li a span{
+    display: none;
+    margin-right: 10px;
+    top: -3.8px;
+    position: relative;
+}
+nav.road-lights ul li a.active span{
+    display: inline-block;
+}
+nav.road-lights ul li a .indicator{
+    width: 2.5px;
+    height: 15px;
+    background: #fff;
+    display: inline-block;
+    position: relative;
+}
+nav.road-lights ul li a.active .indicator{
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    right: -4px;
+    top: -2px;
+}
+nav.road-lights ul li a:hover span{
+    display: inline-block;
+}
 
 
 /* umbrella */
