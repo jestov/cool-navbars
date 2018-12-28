@@ -223,3 +223,8 @@ nav.umbrella ul li a.active .indicator{
 nav.umbrella ul li a:hover span{
     display: inline-block;
 }
+@media (max-width: 768px) {
+    nav.cool-navbar{
+        right: 2px;
+    }
+}
