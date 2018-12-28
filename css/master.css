@@ -95,6 +95,9 @@ details summary{
     cursor: pointer;
     height: 35px;
 }
+details summary::-webkit-details-marker {
+  display:none;
+}
 details summary .open{
     display: none;
 }
