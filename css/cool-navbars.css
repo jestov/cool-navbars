@@ -10,7 +10,7 @@ ul li a{
     color: #fff;
     text-decoration: none;
 }
-nav.jellyfish{
+nav.cool-navbar{
     position: fixed;
     bottom: 30px;
     right: 60px;
@@ -58,12 +58,6 @@ nav.jellyfish ul li a:hover span{
 
 
 /* neon */
-nav.neon{
-    position: fixed;
-    bottom: 30px;
-    right: 60px;
-    text-align: right;
-}
 nav.neon ul li a{
     display: inline-block;
     font-size: 12.5px;
@@ -107,7 +101,43 @@ nav.neon ul li a:hover span{
 
 /* skateboarding */
 
-
+nav.skateboarding ul li a{
+    display: inline-block;
+    font-size: 12.5px;
+    padding: 5px 10px;
+    -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+}
+nav.skateboarding ul li a span{
+    display: none;
+    margin-right: 10px;
+    top: -4px;
+    position: relative;
+}
+nav.skateboarding ul li a.active span{
+    display: inline-block;
+}
+nav.skateboarding ul li a .indicator{
+    width: 3.5px;
+    height: 15px;
+    border-radius: 10px;
+    background: #fff;
+    display: inline-block;
+    position: relative;
+}
+nav.skateboarding ul li a.active .indicator{
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    right: -3px;
+    top: -2px;
+}
+nav.skateboarding ul li a:hover span{
+    display: inline-block;
+}
 
 /* road-lights */
 
