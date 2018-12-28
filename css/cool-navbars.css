@@ -226,5 +226,12 @@ nav.umbrella ul li a:hover span{
 @media (max-width: 768px) {
     nav.cool-navbar{
         right: 2px;
+        z-index: 11;
+    }
+    nav.cool-navbar ul li a.active span{
+        display: none;
+    }
+    nav.cool-navbar ul li a:hover span{
+        display: none;
     }
 }
