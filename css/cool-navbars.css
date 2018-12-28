@@ -133,13 +133,13 @@ section#neon div.box:nth-of-type(4){
     background-size: cover;
     background-blend-mode: soft-light;
 }
-nav.jellyfish{
+nav.neon{
     position: fixed;
     bottom: 30px;
     right: 60px;
     text-align: right;
 }
-nav.jellyfish ul li a{
+nav.neon ul li a{
     display: inline-block;
     font-size: 12.5px;
     padding: 5px 10px;
@@ -148,25 +148,26 @@ nav.jellyfish ul li a{
       -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease;
 }
-nav.jellyfish ul li a span{
+nav.neon ul li a span{
     display: none;
     margin-right: 10px;
     top: 2px;
     position: relative;
 }
-nav.jellyfish ul li a.active span{
+nav.neon ul li a.active span{
     display: inline-block;
     top: 0;
 }
-nav.jellyfish ul li a .indicator{
+nav.neon ul li a .indicator{
     width: 3.5px;
     height: 3.5px;
-    border-radius: 50%;
+    border-radius: 0;
+    transform: rotate(-45deg);
     background: #fff;
     display: inline-block;
     position: relative;
 }
-nav.jellyfish ul li a.active .indicator{
+nav.neon ul li a.active .indicator{
     width: 10px;
     height: 10px;
     background: transparent;
@@ -174,7 +175,7 @@ nav.jellyfish ul li a.active .indicator{
     right: -3px;
     top: 2px;
 }
-nav.jellyfish ul li a:hover span{
+nav.neon ul li a:hover span{
     display: inline-block;
 }
 
