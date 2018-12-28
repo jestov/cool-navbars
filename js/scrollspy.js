@@ -1,6 +1,6 @@
 document.addEventListener("scroll", function() {
     var height = window.innerHeight;
-    var targets = document.querySelectorAll("[data-target]");
+    var targets = document.querySelectorAll("section.active [data-target]");
     for(var i = 0, length = targets.length; i < length; i++) {
         var target = targets[i];
         var position = target.getBoundingClientRect()
