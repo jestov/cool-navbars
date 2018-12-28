@@ -47,7 +47,8 @@ section h2{
     color: transparent;
     letter-spacing: -1px;
     font-weight: 800;
-    margin: 0;
+    margin: 30px 0;
+    line-height: 0.8;
 }
 section h3{
     font-weight: 300;
@@ -174,4 +175,65 @@ nav.jellyfish ul li a.active .indicator{
 }
 nav.jellyfish ul li a:hover span{
     display: inline-block;
+}
+
+
+/* skateboarding */
+
+section#skateboarding div.box:first-of-type{
+    background: url("../img/skateboarding/1.jpeg") center;
+    background-size: cover;
+}
+section#skateboarding div.box:nth-of-type(2){
+    background: url("../img/skateboarding/2.jpeg") center;
+    background-size: cover;
+}
+section#skateboarding div.box:nth-of-type(3){
+    background: url("../img/skateboarding/3.jpeg") center;
+    background-size: cover;
+}
+section#skateboarding div.box:nth-of-type(4){
+    background: url("../img/skateboarding/4.jpeg") center;
+    background-size: cover;
+}
+
+
+
+/* road-lights */
+
+section#road-lights div.box:first-of-type{
+    background: url("../img/road-lights/1.jpeg") center;
+    background-size: cover;
+}
+section#road-lights div.box:nth-of-type(2){
+    background: url("../img/road-lights/2.jpeg") center;
+    background-size: cover;
+}
+section#road-lights div.box:nth-of-type(3){
+    background: url("../img/road-lights/3.jpeg") center;
+    background-size: cover;
+}
+section#road-lights div.box:nth-of-type(4){
+    background: url("../img/road-lights/4.jpeg") center;
+    background-size: cover;
+}
+
+
+/* umbrella */
+
+section#umbrella div.box:first-of-type{
+    background: url("../img/umbrella/1.jpeg") center;
+    background-size: cover;
+}
+section#umbrella div.box:nth-of-type(2){
+    background: url("../img/umbrella/2.jpeg") center;
+    background-size: cover;
+}
+section#umbrella div.box:nth-of-type(3){
+    background: url("../img/umbrella/3.jpeg") center;
+    background-size: cover;
+}
+section#umbrella div.box:nth-of-type(4){
+    background: url("../img/umbrella/4.jpeg") center;
+    background-size: cover;
 }
