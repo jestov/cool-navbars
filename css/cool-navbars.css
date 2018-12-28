@@ -113,7 +113,7 @@ nav.skateboarding ul li a{
 nav.skateboarding ul li a span{
     display: none;
     margin-right: 10px;
-    top: -4px;
+    top: -3.8px;
     position: relative;
 }
 nav.skateboarding ul li a.active span{
