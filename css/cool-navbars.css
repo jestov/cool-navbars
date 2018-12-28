@@ -129,8 +129,9 @@ section#neon div.box:nth-of-type(3){
     background-size: cover;
 }
 section#neon div.box:nth-of-type(4){
-    background: url("../img/neon/4.jpeg") center;
+    background: url("../img/neon/4.jpeg") rgba(10,10,10,0.4) center;
     background-size: cover;
+    background-blend-mode: soft-light;
 }
 nav.jellyfish{
     position: fixed;
@@ -206,12 +207,14 @@ section#road-lights div.box:first-of-type{
     background-size: cover;
 }
 section#road-lights div.box:nth-of-type(2){
-    background: url("../img/road-lights/2.jpeg") center;
+    background: url("../img/road-lights/2.jpeg") rgba(10,10,10,0.4) center;
     background-size: cover;
+    background-blend-mode: soft-light;
 }
 section#road-lights div.box:nth-of-type(3){
-    background: url("../img/road-lights/3.jpeg") center;
+    background: url("../img/road-lights/3.jpeg") rgba(10,10,10,0.4) center;
     background-size: cover;
+    background-blend-mode: soft-light;
 }
 section#road-lights div.box:nth-of-type(4){
     background: url("../img/road-lights/4.jpeg") center;
