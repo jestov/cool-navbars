@@ -41,7 +41,7 @@ section#jellyfish div.box:nth-of-type(4){
     background: url("../img/jellyfish/4.jpeg") center;
     background-size: cover;
 }
-section#jellyfish h2{
+section h2{
     font-size: 120px;
     -webkit-text-stroke: 2px white;
     color: transparent;
@@ -49,19 +49,19 @@ section#jellyfish h2{
     font-weight: 800;
     margin: 0;
 }
-section#jellyfish h3{
+section h3{
     font-weight: 300;
     letter-spacing: 6px;
     font-size: 20px;
     line-height: 2;
 }
-section#jellyfish h4{
+section h4{
     font-size: 80px;
     font-weight: 800;
     letter-spacing: -5px;
     margin: 0;
 }
-section#jellyfish p{
+section p{
     font-weight: 300;
     line-height: 2.2;
     text-align: justify;
@@ -69,7 +69,72 @@ section#jellyfish p{
 nav.jellyfish{
     position: fixed;
     bottom: 30px;
-    right: 20px;
+    right: 60px;
+    text-align: right;
+}
+nav.jellyfish ul li a{
+    display: inline-block;
+    font-size: 12.5px;
+    padding: 5px 10px;
+    -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+}
+nav.jellyfish ul li a span{
+    display: none;
+    margin-right: 10px;
+    top: 2px;
+    position: relative;
+}
+nav.jellyfish ul li a.active span{
+    display: inline-block;
+    top: 0;
+}
+nav.jellyfish ul li a .indicator{
+    width: 3.5px;
+    height: 3.5px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    position: relative;
+}
+nav.jellyfish ul li a.active .indicator{
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    right: -3px;
+    top: 2px;
+}
+nav.jellyfish ul li a:hover span{
+    display: inline-block;
+}
+
+
+
+/* neon */
+
+section#neon div.box:first-of-type{
+    background: url("../img/neon/1.jpeg") center;
+    background-size: cover;
+}
+section#neon div.box:nth-of-type(2){
+    background: url("../img/neon/2.jpeg") center;
+    background-size: cover;
+}
+section#neon div.box:nth-of-type(3){
+    background: url("../img/neon/3.jpeg") center;
+    background-size: cover;
+}
+section#neon div.box:nth-of-type(4){
+    background: url("../img/neon/4.jpeg") center;
+    background-size: cover;
+}
+nav.jellyfish{
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
     text-align: right;
 }
 nav.jellyfish ul li a{
