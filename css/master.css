@@ -52,26 +52,26 @@ nav#main-nav ul{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 10;
 }
 nav#main-nav ul li{
     display: block;
 }
 nav#main-nav ul li a{
-    font-size: 35px;
+    font-weight: 800;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    color: transparent;
+    font-size: 40px;
     margin: 0 10px;
     padding: 12px 5px;
     display: inline-block;
     line-height: 1;
-    font-weight: 600;
-    opacity: 0.5;
 }
 nav#main-nav ul li a:hover{
-    opacity: 0.8;
+    color: #fff;
 }
 nav#main-nav ul li a.active{
-    font-weight: 800;
-    -webkit-text-stroke: 1px white;
-    color: transparent;
+    color: #fff;
     font-size: 60px;
     opacity: 1;
 }
@@ -335,6 +335,12 @@ footer a:hover{
     nav#main-nav{
         padding: 0 10px;
         top: 15px;
+    }
+    nav#main-nav ul li a{
+        font-size: 25px;
+    }
+    nav#main-nav ul li a.active{
+        font-size: 35px;
     }
     section div.box{
         padding: 40px 10%;
