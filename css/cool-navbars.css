@@ -179,3 +179,47 @@ nav.road-lights ul li a:hover span{
 
 
 /* umbrella */
+nav.umbrella ul li a{
+    display: inline-block;
+    font-size: 12.5px;
+    padding: 0 10px;
+    -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+}
+nav.umbrella ul li{
+    line-height: 0;
+}
+nav.umbrella ul li a span{
+    display: none;
+    margin-right: 15px;
+    top: -10px;
+    position: relative;
+}
+nav.umbrella ul li a.active span{
+    display: inline-block;
+    top: -4px;
+    margin-right: 2px;
+}
+nav.umbrella ul li a .indicator{
+    width: 1px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    position: relative;
+}
+nav.umbrella ul li a:hover .indicator{
+    background: #fff;
+}
+nav.umbrella ul li a.active .indicator{
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 1px solid #fff;
+    right: -6.5px;
+    border-radius: 50%;
+}
+nav.umbrella ul li a:hover span{
+    display: inline-block;
+}
