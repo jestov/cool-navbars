@@ -6,6 +6,9 @@ html { font-family: 'Inter UI', sans-serif; }
 *{
     box-sizing: border-box;
 }
+*:focus{
+    outline: 0;
+}
 body, html{
     position: relative;
     height: 100%;
