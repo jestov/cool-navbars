@@ -225,12 +225,14 @@ section#road-lights div.box:nth-of-type(4){
 /* umbrella */
 
 section#umbrella div.box:first-of-type{
-    background: url("../img/umbrella/1.jpeg") center;
+    background: url("../img/umbrella/1.jpeg") rgba(10,10,10,0.4) center;
     background-size: cover;
+    background-blend-mode: soft-light;
 }
 section#umbrella div.box:nth-of-type(2){
-    background: url("../img/umbrella/2.jpeg") center;
+    background: url("../img/umbrella/2.jpeg") rgba(10,10,10,0.5) center;
     background-size: cover;
+    background-blend-mode: soft-light;
 }
 section#umbrella div.box:nth-of-type(3){
     background: url("../img/umbrella/3.jpeg") center;
