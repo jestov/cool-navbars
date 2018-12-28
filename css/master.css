@@ -107,7 +107,7 @@ details[open] summary .open{
 details summary .open .bar:first-of-type{
     transform: rotate(-45deg);
     width: 30px;
-    bottom: -10px;
+    bottom: -11px;
     position: relative;
 }
 details summary .open .bar:nth-child(2){
@@ -132,7 +132,7 @@ details summary:hover .closed .bar:nth-of-type(3){
     height: 1px;
     background: #fff;
     display: block;
-    margin: 7px;
+    margin: 8px;
     -moz-transition: all 0.4s ease;
       -o-transition: all 0.4s ease;
       -webkit-transition: all 0.4s ease;
@@ -215,8 +215,9 @@ section#jellyfish div.box:first-of-type{
     background-size: cover;
 }
 section#jellyfish div.box:nth-of-type(2){
-    background: url("../img/jellyfish/2.jpeg") center;
+    background: url("../img/jellyfish/2.jpeg") rgba(10,10,10,0.2) center;
     background-size: cover;
+    background-blend-mode: soft-light;
 }
 section#jellyfish div.box:nth-of-type(3){
     background: url("../img/jellyfish/3.jpeg") center;
@@ -252,8 +253,9 @@ section#skateboarding div.box:first-of-type{
     background-size: cover;
 }
 section#skateboarding div.box:nth-of-type(2){
-    background: url("../img/skateboarding/2.jpeg") center;
+    background: url("../img/skateboarding/2.jpeg") rgba(10,10,10,0.3) center;
     background-size: cover;
+    background-blend-mode: soft-light;
 }
 section#skateboarding div.box:nth-of-type(3){
     background: url("../img/skateboarding/3.jpeg") center;
@@ -324,4 +326,56 @@ footer a{
 }
 footer a:hover{
     border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+
+@media (max-width: 768px){
+    nav#main-nav{
+        padding: 0 10px;
+        top: 15px;
+    }
+    section div.box{
+        padding: 40px 10%;
+    }
+    section h2{
+        font-size: 55px;
+        -webkit-text-stroke: 1px white;
+    }
+    section h3{
+        line-height: 1.5;
+        font-size: 14px;
+        letter-spacing: 1px;
+        word-spacing: 0;
+    }
+    section h4{
+        font-size: 40px;
+        letter-spacing: -2px;
+    }
+    section p{
+        line-height: 1.5;
+        font-size: 12.5px;
+    }
+    .line:first-of-type{
+        margin-left: 10%;
+    }
+    .line:nth-of-type(2){
+        margin-left: 35%;
+    }
+    .line:nth-of-type(3){
+        margin-left: 65%;
+    }
+    .line:nth-of-type(4){
+        margin-left: 90%;
+    }
+    footer{
+        padding: 3.25% 12px;
+        font-size: 9px;
+    }
+    .github{
+        bottom: 15px;
+        left: 10px;
+    }
+    details{
+        padding: 15px 0;
+    }
 }
